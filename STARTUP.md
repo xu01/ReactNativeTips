@@ -33,3 +33,4 @@ ModuleName 和 ProjectName 尽量不要使用相同
 
 Reference: 
 http://www.hotobear.com/?p=1015 (React Native 初探（iOS）)
+http://blog.cnbang.net/tech/2698/?utm_source=tuicool (React Native通信机制详解)
