@@ -14,10 +14,20 @@ cd node-vXXX
 make
 make install
 node --version
-建个目录
-npm install react-native 创建出 node_module 文件夹
-编写 package.json 和 index.ios.js
-并启动 npm start
+
+npm install -g react-native-cli 全局安装 react-native
+
+react-native init 项目名 (由于是服务器端，考虑删除 ios 和 android 文件夹)
+react-native start --port XXX 让它跑在某个端口上
+
+PS:
+第二种方法
+安装 nvm (node version manager)  github(https://github.com/creationix/nvm)
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+source ~/.bash_profile
+列出需要的版本
+nvm list-remote
+nvm install vXXX 安装相应的版本
 </p>
 <p>
 客户端由于 facebook 的不更新 pod 。只能使用 npm 来安装本地 react-native 并在 Podfile 中指向 react-native 目录 (facebook虽然不更新 pod，但项目中的 podspec 还是更新的)
@@ -34,3 +44,6 @@ ModuleName 和 ProjectName 尽量不要使用相同
 Reference: 
 http://www.hotobear.com/?p=1015 (React Native 初探（iOS）)
 http://blog.cnbang.net/tech/2698/?utm_source=tuicool (React Native通信机制详解)
+
+
+
